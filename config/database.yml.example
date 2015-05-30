@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: bus_detective_marketing
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: bus_detective_marketing
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: bus_detective_marketing
+

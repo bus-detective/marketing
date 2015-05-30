@@ -1,0 +1,44 @@
+#!/bin/sh
+
+set -e
+
+echo ""
+echo " Setting up Bus Detective Marketing"
+echo ""
+
+
+#
+# Check for Bundler
+#
+if test ! $(which bundle)
+then
+  echo "  x You need to install Bundler:"
+  echo "    gem install bundler"
+  exit
+else
+  echo "  + Bundler found."
+fi
+
+#
+# Install gems
+#
+echo "  + Bootstrapping your Rubies."
+bundle install --path vendor --quiet
+
+#
+# Setting up .env
+#
+echo "  + Creating .env"
+cp .env.example .env
+
+#
+# Set up the database
+#
+echo "  + Setting up the database"
+cp config/database.yml.example config/database.yml
+bundle exec rake db:create
+bundle exec rake db:migrate
+
+echo "Ok, setup complete. Run"
+echo "rails server"
+echo "to start the application."
