@@ -8,6 +8,8 @@ gem 'pg'
 gem 'puma'
 gem 'rack-cors', require: 'rack/cors'
 gem 'sentry-raven'
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
 
 group :development, :test do
   gem 'byebug'
