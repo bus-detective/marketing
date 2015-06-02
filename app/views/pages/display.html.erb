@@ -11,14 +11,22 @@
   </div>
 </div>
 
-<div class='container--grey'>
+<div class='container'>
+  <div class='row'>
+    <div class='col-sm-12'>
+      <%= image_tag('bd-photo.jpg', class: 'center full-width') %>
+    </div>
+  </div>
+</div>
+
+<div class='container--white'>
   <div class='container text-center'>
     <div class='row'>
       <div class='col-sm-4'>
         <%= image_tag('bd-attract.svg', class: 'icon--circle') %>
         <div class='bd--list'>
           <h3>Attract Attention</h3>
-          <p>Bus Detective displays start conversations and draws people into your business.</p>
+          <p>Bus Detective displays start conversations and draw people into your business.</p>
         </div>
       </div>
       <div class='col-sm-4'>
@@ -39,33 +47,27 @@
   </div>
 </div>
 
-<div class='container container--white text-center'>
-  <div class='row'>
-    <div class='col-sm-12'>
-      <h2>How It Works</h2>
-      <p>Become a Founding Partner with Bus Detective.</p>
-      <%= image_tag('bd-founder.svg', class: 'icon--small') %>
-    </div>
-    <div class='col-sm-6 col-sm-offset-3'>
-      <div class='well'>
-        <p>The first 10 Founding Partner businesses will receive a tablet for $20 and free tablet installation with app running. You’ll provide WiFi and display space.</p>
+<div class='container--grey text-center'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-12'>
+        <h2>How It Works</h2>
+        <p>Become a Founding Partner with Bus Detective.</p>
+        <%= image_tag('bd-founder.svg', class: 'icon--small') %>
       </div>
-    </div>
+      <div class='col-sm-6 col-sm-offset-3'>
+        <div class='well'>
+          <p>The first 10 Founding Partner businesses will receive a tablet for $20. We'll install it at your business with the app up and running. It will display routes and arrival times for the nearest bus stops. As a partner, you're responsible for providing WiFi and display space.</p>
+        </div>
+      </div>
 
-    <div class='col-sm-6 col-sm-offset-3'>
-      <p>
-        Email
-        <%= mail_to 'dschleith@gmail.com', 'Apply Now', subject: 'Bus Detective Partner' %>
-        about applying for a display
-      </p>
-    </div>
-  </div>
-</div>
-
-<div class='container--grey'>
-  <div class='row'>
-    <div class='col-sm-12'>
-      <%= image_tag('bd-photo.jpg', class: 'center') %>
+      <div class='col-sm-6 col-sm-offset-3'>
+        <p>
+          Email
+          <%= mail_to 'dschleith@gmail.com', 'Daniel Schleith', subject: 'Bus Detective Partner' %>
+          about applying for a display
+        </p>
+      </div>
     </div>
   </div>
 </div>
@@ -79,8 +81,8 @@
     <div class='col-sm-6 col-sm-offset-3'>
       <p>
         Bus Detective Public Displays are a
-        <%= link_to 'People’s Liberty Project Grantee', 'http://www.peoplesliberty.org/grantees/', target: '_blank' %>
-         The team behind the displays includes Daniel Schleith and Nate Wessel, graduate students and public transportation researchers, and Brad Thomas, a SORTA board member.
+        <%= link_to 'People’s Liberty Project Grantee.', 'http://www.peoplesliberty.org/grantees/', target: '_blank' %>
+        The team behind the displays includes Daniel Schleith and Nate Wessel, graduate students and public transportation researchers, and Brad Thomas, a SORTA board member.
       </p>
     </div>
   </div>
