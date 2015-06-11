@@ -1,10 +1,14 @@
 .container--white
-  padding: 100px 0
+  padding: 80px 0
 
 .container--grey
-  padding: 100px 0
+  padding: 80px 0
   background-color: $bd-lt-grey
 
 .container--blue
-  padding: 100px 0
+  padding: 80px 0
   background-color: $bd-blue
+
+@media only screen and (max-width: 480px)
+  .container--blue, .container--grey, .container--white
+    padding: 40px 0
