@@ -1,0 +1,47 @@
+%swatch
+  display: inline-block
+  border-radius: 3px
+  height: 150px
+  width: 135px
+  margin-right: 15px
+  vertical-align: top
+
+.swatch
+  display: inline-block
+
+.swatch--blue
+  @extend %swatch
+  background: $bd-blue
+
+.swatch--green
+  @extend %swatch
+  background: $bd-green
+
+.swatch--lt-blue
+  @extend %swatch
+  background: $bd-lt-blue
+
+.swatch--dk-blue
+  @extend %swatch
+  background: $bd-dk-blue
+
+.swatch--grey
+  @extend %swatch
+  background: $bd-grey
+
+.swatch--lt-grey
+  @extend %swatch
+  background: $bd-lt-grey
+
+.swatch__info
+  background-color: white
+  text-align: center
+  padding: 10px
+  width: 135px
+
+@media only screen and (max-width: 480px)
+  .swatch
+    width: 100%
+    display: block
+  .swatch__info, %swatch
+    width: 100%
