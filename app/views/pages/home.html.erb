@@ -1,8 +1,89 @@
-<div class='container text-center'>
-  <div class='row'>
-    <div class='col-sm-12'>
-      <h1 class='bd--heading'>Welcome to Bus Detective</h1>
-      <a class='btn btn-default' href='http://app.busdetective.com/' role="button">Go to the app</a>
+<div class='container--blue'>
+  <div class='container hero'>
+    <div class='row'>
+      <div class='col-sm-4 col-sm-offset-1'>
+        <%= image_tag('bus-detective.svg', class: 'center hero__image') %>
+      </div>
+      <div class='col-lg-5 col-md-7'>
+        <h1>Find Your Bus</h1>
+        <p>Stop wondering when the bus is coming. Bus Detective gives you real-time arrival data for Cincinnati Metro buses.</p>
+        <div class='hero__buttons'>
+          <%= link_to image_tag('app-store.svg', class: 'hero__button'), 'itms://itunes.apple.com/us/app/busdetective/id982770372?mt=8' %>
+          <%= link_to image_tag('google-play.svg', class: 'hero__button'), 'https://play.google.com/store/apps/details?id=com.teamgaslight.busdetective&hl=en', target:'_blank' %>
+          <%= link_to image_tag('web-app.svg', class: 'hero__button'), 'http://app.busdetective.com' %>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+<div class='container--white'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3'>
+        <%= image_tag('homepage.jpg', class: 'full-width u-push--bottom') %>
+      </div>
+    </div>
+
+    <div class='row text-center'>
+      <div class='col-sm-4'>
+        <%= image_tag('bd-route.svg', class: 'icon') %>
+        <div class='bd--list'>
+          <h3>Track Approaching Buses</h3>
+          <p>See real arrival times and minute-by-minute countdowns for every bus headed for your stop in the next hour.</p>
+        </div>
+      </div>
+      <div class='col-sm-4'>
+        <%= image_tag('bd-fav.svg', class: 'icon') %>
+        <div class='bd--list'>
+          <h3 class='bd--list-heading'>Save Favorite Stops</h3>
+          <p>Tap the heart icon to bookmark bus stops near work, home or other regular destinations.</p>
+        </div>
+      </div>
+      <div class='col-sm-4'>
+        <%= image_tag('bd-search.svg', class: 'icon') %>
+        <div class='bd--list'>
+          <h3 class='bd--list-heading'>Search Bus Stops</h3>
+          <p>Quickly find bus stops by street name, stop ID number (found on bus stop signs) or your current location.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class='container--grey text-center'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-6 col-sm-offset-3'>
+        <%= image_tag('bd-tablet.png', class: 'center') %>
+        <h2>Coming Soon! Public Display Screens</h2>
+        <p>
+          This summer real-time bus arrival data will start popping up on tablets in store windows, bars and restaurants. Find out more about this
+          <%= link_to 'People’s Liberty', 'http://www.peoplesliberty.org/grantees/', target: '_blank' %>
+          grant project.
+        </p>
+        <%= link_to 'Learn More', page_path('display'), class: 'btn btn-default', role: 'button' %>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class='container--white text-center'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-6 col-sm-offset-3'>
+        <h3 class='note'>Questions? Need help?</h3>
+        <%= mail_to 'hi@busdetective.com', 'hi@busdetective.com', class:'heading center' %>
+        <%= link_to image_tag('twitter.svg', class: 'icon--twitter icon--circle'), 'https://twitter.com/busdetective', target:'_blank' %>
+        <%= link_to image_tag('facebook.svg', class: 'icon--facebook icon--circle'), 'https://www.facebook.com/busdetective', target:'_blank' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class='text-center'>
+  <%= image_tag('bd-eyes.svg', class: 'center icon--small') %>
+  <%= link_to 'Made with love by Gaslight', 'https://teamgaslight.com/', target:'_blank', class:'light' %>
+</footer>

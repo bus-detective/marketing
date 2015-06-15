@@ -1,0 +1,27 @@
+.hero
+  h1
+    font-weight: 600
+    margin: 0
+    font-size: 56px
+  p
+    color: #fff
+    font-size: 24px
+    font-weight: 400
+    margin-bottom: 0
+
+.hero__button
+  height: 40px
+  transition: all 0.25s
+  &:hover
+    opacity: 0.85
+
+.hero__image
+  max-width: 230px
+
+@media only screen and (max-width: 768px)
+  .hero h1, p
+    text-align: center
+
+  .hero__buttons
+    text-align: center
+    margin-top: 15px
