@@ -7,9 +7,11 @@
       <div class='col-lg-5 col-md-7'>
         <h1>Find Your Bus</h1>
         <p>Stop wondering when the bus is coming. Bus Detective gives you real-time arrival data for Cincinnati Metro buses.</p>
-        <%= link_to image_tag('app-store.svg', class: 'hero__button'), 'itms://itunes.apple.com/us/app/busdetective/id982770372?mt=8' %>
-        <%= link_to image_tag('google-play.svg', class: 'hero__button'), 'https://play.google.com/store/apps/details?id=com.teamgaslight.busdetective&hl=en', target:'_blank' %>
-        <%= link_to image_tag('web-app.svg', class: 'hero__button'), 'http://app.busdetective.com' %>
+        <div class='hero__buttons'>
+          <%= link_to image_tag('app-store.svg', class: 'hero__button'), 'itms://itunes.apple.com/us/app/busdetective/id982770372?mt=8' %>
+          <%= link_to image_tag('google-play.svg', class: 'hero__button'), 'https://play.google.com/store/apps/details?id=com.teamgaslight.busdetective&hl=en', target:'_blank' %>
+          <%= link_to image_tag('web-app.svg', class: 'hero__button'), 'http://app.busdetective.com' %>
+        </div>
       </div>
     </div>
   </div>
@@ -18,7 +20,7 @@
 <div class='container--white'>
   <div class='container'>
     <div class='row'>
-      <div class='col-sm-6 col-sm-offset-3'>
+      <div class='col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3'>
         <%= image_tag('homepage.jpg', class: 'full-width u-push--bottom') %>
       </div>
     </div>
