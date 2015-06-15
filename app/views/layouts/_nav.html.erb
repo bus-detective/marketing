@@ -5,8 +5,7 @@
         <%= link_to image_tag('bd-logo.svg', alt: 'bus detective logo', class: 'user-nav__logo'), root_url %>
         <ul>
           <li><%= link_to 'Displays', page_path('display') %></li>
-          <li><%= link_to 'Run the App', 'http://app.busdetective.com' %></li>
-          <li><%= link_to 'Brand Assets', page_path('brand') %></li>
+          <li><%= mail_to 'hi@busdetective.com', 'Contact' %></li>
         </ul>
       </div>
     </div>
