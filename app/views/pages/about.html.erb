@@ -1,0 +1,81 @@
+<div class='container--white text-center'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-6 col-sm-offset-3'>
+        <%= image_tag('bd-icon.png') %>
+        <h1>About Bus Detective</h1>
+        <p>
+          In 2015, Cincinnati Metro did something awesome: They made the real-time geographic data for buses public. We’re the first locally made app to deliver this information to bus riders, so you’ll always know when the bus is coming.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='container--grey'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-4 col-sm-offset-1 col-xs-6 col-xs-offset-3'>
+        <%= image_tag('bd-heart.svg', class: 'full-width') %>
+      </div>
+      <div class='col-sm-6 col-xs-12'>
+        <h2>Made by Gaslight</h2>
+        <p>
+          <%= link_to 'Gaslight', 'https://teamgaslight.com', target: '_blank' %>
+          is a software development consultancy in Cincinnati. In early 2015, we moved our offices from the suburbs to downtown, and almost immediately, more than half of us started taking the bus to work.
+        </p>
+        <p>
+          We built a simple app to tell us when the bus was coming, and soon, other people started using it, too. Eventually, the project grew into Bus Detective. It combines two of our favorite things: open source software and open data.
+        </p>
+        <p>
+          <%= link_to 'Check out Gaslight’s other projects.', 'https://teamgaslight.com/work', target: '_blank' %>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class='container--white'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-5 col-sm-offset-1 u-push--bottom'>
+        <h2>Media Coverage</h2>
+        <p>
+          <%= link_to 'Waiting for the bus just got easier in Greater Cincinnati >', 'http://www.wcpo.com/news/insider/waiting-for-the-bus-just-got-easier', target: '_blank' %>
+          <br />
+          WCPO
+        </p>
+        <p>
+          <%= link_to 'Real-time app review: Bus Detective >', 'http://cincymap.org/blog/real-time-app-review-bus-detective/', target: '_blank' %>
+          <br />
+          Cincinnati Transit Blog
+        </p>
+        <p>
+          <%= link_to 'Bus Detective >', 'http://5chw4r7z.blogspot.com/2015/05/bus-detective.html', target: '_blank' %>
+          <br />
+          5chw4r7z Blog
+        </p>
+      </div>
+      <div class='col-sm-5'>
+        <div class='quote'>
+          <blockquote>“The buses come when it says they will. Plus, that logo. Gosh.”</blockquote>
+          <p>-Cincinnati Transit Blog</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='container--grey text-center'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-6 col-sm-offset-3'>
+        <h3 class='note'>Questions? Need help?</h3>
+        <%= mail_to 'hi@busdetective.com', 'hi@busdetective.com', class:'heading center' %>
+        <%= link_to image_tag('twitter.svg', class: 'icon--twitter icon--circle'), 'https://twitter.com/busdetective', target:'_blank' %>
+        <%= link_to image_tag('facebook.svg', class: 'icon--facebook icon--circle'), 'https://www.facebook.com/busdetective', target:'_blank' %>
+      </div>
+    </div>
+  </div>
+</div>
