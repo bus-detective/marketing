@@ -1,8 +1,8 @@
 class PagesController < ApplicationController
   def letsencrypt
     case params[:id]
-    when 'LKgzYKUJjp71CZ5s9PUA6_cj6xebp_u7VmTLX4NDun8'
-      render text: 'LKgzYKUJjp71CZ5s9PUA6_cj6xebp_u7VmTLX4NDun8.x2TXuRtPY5PkPL4YMeiKaMl4xBtFrjfOe94AR0Iyg1M'
+    when 'JAb6nuC9AlgQQN0LKe42K1zaNM12DyfaKyRAA4TyCaQ'
+      render text: 'JAb6nuC9AlgQQN0LKe42K1zaNM12DyfaKyRAA4TyCaQ.x2TXuRtPY5PkPL4YMeiKaMl4xBtFrjfOe94AR0Iyg1M'
     when "gTrmpuvlhFtL3v0N2Rkhk9GBxkzXsnkfwyf_-XWRsj0"
       render text: 'gTrmpuvlhFtL3v0N2Rkhk9GBxkzXsnkfwyf_-XWRsj0.3agPbEGMW8yyXAdNJmtYhleq07pUgmnN1oCrhN9iRwA'
     when "OLj4hja-R9m7nOL2UWmj8jG-WlnX7Y2XJqGPEJ_WGXc"
