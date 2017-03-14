@@ -7,6 +7,8 @@ class PagesController < ApplicationController
       render text: "#{params[:id]}.3agPbEGMW8yyXAdNJmtYhleq07pUgmnN1oCrhN9iRwA"
     when "C8WHrIIU7RaJl6ZBKB3iDTI6fiN_PYyEzws6KzJ18B8"
       render text: "#{params[:id]}.jOl0WYrEi5GTa1BlXCSMh31NLeYmWZbZA_QaK-ZpnIE"
+    when "lSEsPnO3_PhX7VO5SD-JS6xhXm6HDCoVa7lpsueDfcE"
+      render text: "#{params[:id]}.jOl0WYrEi5GTa1BlXCSMh31NLeYmWZbZA_QaK-ZpnIE"
     else
       render text: "#{params[:id]}.x2TXuRtPY5PkPL4YMeiKaMl4xBtFrjfOe94AR0Iyg1M"
     end
