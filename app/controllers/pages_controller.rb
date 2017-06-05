@@ -9,6 +9,8 @@ class PagesController < ApplicationController
       render text: "#{params[:id]}.jOl0WYrEi5GTa1BlXCSMh31NLeYmWZbZA_QaK-ZpnIE"
     when "lSEsPnO3_PhX7VO5SD-JS6xhXm6HDCoVa7lpsueDfcE"
       render text: "#{params[:id]}.jOl0WYrEi5GTa1BlXCSMh31NLeYmWZbZA_QaK-ZpnIE"
+    when "t0FKxYEVT4eFdtrbOjyqouQ-KcAwY_2wCjukfQjCc5M"
+      render text: "#{params[:id]}.jOl0WYrEi5GTa1BlXCSMh31NLeYmWZbZA_QaK-ZpnIE"
     else
       render text: "#{params[:id]}.x2TXuRtPY5PkPL4YMeiKaMl4xBtFrjfOe94AR0Iyg1M"
     end
