@@ -11,6 +11,8 @@ class PagesController < ApplicationController
       render text: "#{params[:id]}.jOl0WYrEi5GTa1BlXCSMh31NLeYmWZbZA_QaK-ZpnIE"
     when "D57zrJoQCt8v-ZbEBX_manQVu-L-p5B4VPF0HtShrgU"
       render text: "#{params[:id]}.jOl0WYrEi5GTa1BlXCSMh31NLeYmWZbZA_QaK-ZpnIE"
+    when "kaqtpJzz3yp08zAzyW3nwkalNoZbglqqkkm9ND764cE"
+      render text: "#{params[:id]}.jOl0WYrEi5GTa1BlXCSMh31NLeYmWZbZA_QaK-ZpnIE"
     else
       render text: "#{params[:id]}.x2TXuRtPY5PkPL4YMeiKaMl4xBtFrjfOe94AR0Iyg1M"
     end
