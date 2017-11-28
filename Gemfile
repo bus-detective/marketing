@@ -20,7 +20,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'spring'
   gem 'spring-commands-rspec'
-  gem 'web-console', '~> 2.0'
+  gem 'web-console'
 end
 
 group :test do
