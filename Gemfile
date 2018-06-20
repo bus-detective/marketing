@@ -11,6 +11,10 @@ gem 'sentry-raven'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 
+group :development do
+  gem 'web-console'
+end
+
 group :development, :test do
   gem 'byebug'
   gem 'dotenv-rails'
@@ -20,7 +24,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'spring'
   gem 'spring-commands-rspec'
-  gem 'web-console'
 end
 
 group :test do
