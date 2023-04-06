@@ -1,37 +1,34 @@
 source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+ruby '3.0.4'
 
-gem 'rails', '4.2.10'
-gem 'sass-rails', '~> 5.0'
-gem 'pg'
-gem 'puma'
-gem 'rack-cors', require: 'rack/cors'
-gem 'sentry-raven'
-gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
-
-group :development do
-  gem 'web-console'
-end
+gem 'bootsnap', '>= 1.4.4', require: false
+gem 'bootstrap-sass'
+gem 'jbuilder', '~> 2.7'
+gem 'puma', '~> 5.0'
+gem 'rails', '~> 6.1.7'
+gem 'sass-rails', '>= 6'
+gem 'sprockets-rails'
+gem 'turbolinks', '~> 5'
+gem 'webpacker', '~> 5.0'
 
 group :development, :test do
-  gem 'byebug'
-  gem 'dotenv-rails'
-  gem 'factory_girl_rails'
-  gem 'pry'
-  gem 'pry-byebug'
-  gem 'rspec-rails'
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+end
+
+group :development do
+  gem 'listen', '~> 3.3'
+  gem 'rack-mini-profiler', '~> 2.0'
   gem 'spring'
-  gem 'spring-commands-rspec'
+  gem 'web-console', '>= 4.1.0'
 end
 
 group :test do
-  gem 'simplecov', require: false
-  gem 'database_cleaner'
+  gem 'capybara', '>= 3.26'
+  gem 'selenium-webdriver', '>= 4.0.0.rc1'
+  gem 'webdrivers'
 end
 
-group :production do
-  gem 'rails_12factor'
-  gem 'uglifier'
-end
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

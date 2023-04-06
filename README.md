@@ -1,17 +1,13 @@
 # Bus Detective Marketing Site
 
 ## Setup
-
-    ./bin/bootstrap
-
+```sh
+./bin/setup
+```
 ## Run
-
-    rails s
-
-## Test
-
-    rake
-
+```sh
+./bin/rails s
+```
 ## License
 This project rocks and uses (MIT-LICENSE).
 
