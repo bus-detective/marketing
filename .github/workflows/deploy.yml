@@ -12,6 +12,5 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-      - uses: superfly/flyctl-actions@1.1
-        with:
-          args: "deploy"
+      - uses: superfly/flyctl-actions/setup-flyctl@1.4
+      - run: flyctl deploy --remote-only
